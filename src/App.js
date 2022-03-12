@@ -1,3 +1,7 @@
+/*
+ * We are going to be using the useEffect hook!
+ */
+import React, { useEffect } from 'react';
 import twitterLogo from './assets/twitter-logo.svg';
 import './App.css';
 
@@ -37,7 +41,7 @@ const App = () => {
     window.addEventListener('load', onLoad);
     return () => window.removeEventListener('load', onLoad);
   }, []);
-  
+
   return (
     <div className="App">
       <div className="container">
